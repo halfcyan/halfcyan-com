@@ -1,15 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `halfcyan's blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `halfcyan`,
+      summary: `who is an idiot and decided to learn webdev in 12 days.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A basic blog to demonstrate any form of competence in web development.`,
+    siteUrl: `https://halfcyan.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `willowithink`,
     },
+    menuLinks: [
+      {
+        name:'home',
+        link:'/'
+      },
+      {
+        name:'blog',
+        link:'/blog',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-postcss',
