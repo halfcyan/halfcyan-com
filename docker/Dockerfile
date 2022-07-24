@@ -1,4 +1,13 @@
-FROM gatsbyjs/gatsby:onbuild as build
+FROM node:18-alpine
 
-FROM gatsbyjs/gatsby
-COPY --from=build /app/public /pub
+RUN apk add --no-cache python3 make g++ && \
+    apk add vips-dev fftw-dev --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community --repository http://dl-3.alpinelinux.org/alpine/edge/main && \
+    rm -fR /var/cache/apk/*
+
+WORKDIR /usr/src
+
+COPY ./package.json package.json
+
+RUN npm install
+
+EXPOSE 8000
