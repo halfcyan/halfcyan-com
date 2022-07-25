@@ -15,7 +15,7 @@ const IndexPage = () => (
       </p>
       <p className="justify-left flex-auto flex-wrap">
         If you've stuck around long enough to read this, you might as well check
-        out my <a href="./blog">blog.</a> Thanks!
+        out my <a href="/blog">blog.</a> Thanks!
       </p>
     </div>
   </Layout>
