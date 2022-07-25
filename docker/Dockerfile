@@ -6,6 +6,8 @@ RUN apk add --no-cache python3 make g++ && \
 
 WORKDIR /usr/src
 
+USER root
+
 COPY ./package.json package.json
 
 RUN npm install

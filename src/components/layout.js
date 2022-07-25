@@ -1,5 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Header from "./header"
+import "../layout.css"
+import "../styles/global.css"
+
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -21,6 +25,8 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
+  <>
+    <Header siteTitle="Big Man" />
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
@@ -28,6 +34,21 @@ const Layout = ({ location, title, children }) => {
         © {new Date().getFullYear()} &middot; halfcyan
       </footer>
     </div>
+    <div
+         style={{
+           margin: `0 auto`,
+           maxWidth: `var(--size-content)`,
+           padding: `var(--size-gutter)`,
+         }}
+       ></div>
+    <main>{children}</main>
+    <footer
+           style={{
+             marginTop: `var(--space-5)`,
+             fontSize: `var(--font-sm)`,
+           }}
+    ></footer>
+  </>
   )
 }
 
