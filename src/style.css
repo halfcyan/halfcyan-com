@@ -63,11 +63,6 @@
   --color-accent: #d1dce5;
 }
 
-/* HTML elements */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 :after,
 :before {
