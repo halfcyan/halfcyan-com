@@ -1,23 +1,25 @@
-import * as React from "react";
-import PropTypes from "prop-types";
+import * as React from "react"
+import PropTypes from "prop-types"
+import Navbar from "./navbar"
 
-const Header = (_Header) => (
+const Header = _Header => (
   <header>
-    <h1 className="text-3xl left-0 p-3 flex float-left absolute text-white">
-      My First Website
-    </h1>
-    <a href="/blog" className="text-xl justify-center object-center flex p-3 float-none">
-      Blog
+    <a
+      className="text-3xl left-0 p-3 flex float-left absolute text-white hover:text-purple-400 transition-colors no-underline font-['Oxygen']"
+      href="/"
+    >
+      halfcyan
     </a>
+    <Navbar></Navbar>
   </header>
-);
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``,
-};
+}
 
-export default Header;
+export default Header

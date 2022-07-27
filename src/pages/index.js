@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from "react"
 
-import Layout from "../components/layout-index";
-import Seo from "../components/seo";
+import Layout from "../components/layout-index"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -17,8 +17,12 @@ const IndexPage = () => (
         If you've stuck around long enough to read this, you might as well check
         out my <a href="/blog">blog.</a> Thanks!
       </p>
+      <p className="justify-left flex-auto flex-wrap">
+        I also have a place where I put music and it embeds automatically! Check
+        it out on the <a href="/music">music</a> page!
+      </p>
     </div>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

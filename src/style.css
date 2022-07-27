@@ -55,12 +55,12 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #9c7ebb;
+  --color-primary: #C084FC;
   --color-text: #ffffff;
-  --color-text-light: #4f5969;
+  --color-text-light: #b6b6b6;
   --color-heading: #ffffff;
   --color-heading-black: rgb(255, 255, 255);
-  --color-accent: #d1dce5;
+  --color-accent: #4c4857;
 }
 
 *,

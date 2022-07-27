@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 html {
-    background-color: #262436;
+  background-color: #262436;
+}
+
+code {
+  background-color: #262635;
+  color: #8a6534;
 }
