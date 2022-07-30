@@ -20,7 +20,7 @@ const musicPage = () => (
     <Layout>
         <Seo title="Music" />
         <div>
-            <h1 className="text-4xl flex justify-center text-purple-400">This is where I spam music.</h1>
+            <h1 className="text-4xl flex justify-center text-purple-400">this is where I spam music.</h1>
         </div>
         <div>
             {musicID.map((element, i) => (
