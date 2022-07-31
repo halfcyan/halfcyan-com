@@ -16,14 +16,14 @@ musicID.forEach(element =>
     allow="clipboard-read; clipboard-write"></iframe>`
 );
 
-const musicPage = () => (
+const musicPage = () => {
     <Layout>
         <Seo title="Music" />
         <div>
             <h1 className="text-4xl flex justify-center text-purple-400">this is where I spam music.</h1>
         </div>
         <div>
-            {musicID.map((element, i) => (
+            {musicID.map((element, i) => {
                 <iframe
                     className="p-2"
                     key={i}
@@ -36,9 +36,9 @@ const musicPage = () => (
                     allow="clipboard-read; clipboard-write"
                 >
                 </iframe>
-            ))}
+            })}
         </div>
     </Layout>
-);
+};
 
 export default musicPage
