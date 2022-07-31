@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout-index"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = () => {
   <Layout>
     <Seo title="Home" />
     <div>
@@ -23,6 +23,6 @@ const IndexPage = () => (
       </p>
     </div>
   </Layout>
-)
+}
 
 export default IndexPage
