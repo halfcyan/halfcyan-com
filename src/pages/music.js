@@ -6,6 +6,16 @@ import musicID from "../../content/music/tidal-links"
 
 let musicElements = "";
 
+musicID.forEach(element => 
+    musicElements = musicElements + `<iframe width="100%" 
+    height="150" 
+    src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Ft%2F{element}&theme=dark"
+    frameborder="0" 
+    allowfullscreen 
+    sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" 
+    allow="clipboard-read; clipboard-write"></iframe>`
+);
+
 const musicPage = () => (
     <Layout>
         <Seo title="Music" />
