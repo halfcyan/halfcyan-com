@@ -4,7 +4,7 @@ import Header from "./header"
 import "../layout.css"
 import "../styles/global.css"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children }: any) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header

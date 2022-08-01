@@ -12,7 +12,7 @@ import Header from "./header"
 import "../layout.css"
 import "../styles/global.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   return (
     <>
       <Header siteTitle="Big Man" />
