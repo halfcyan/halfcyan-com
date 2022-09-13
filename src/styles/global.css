@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -12,3 +13,6 @@ code {
   background-color: #262635;
   color: #8a6534;
 }
+=======
+@tailwind utilities;
+>>>>>>> project-a/master

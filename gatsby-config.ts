@@ -22,7 +22,11 @@ module.exports = {
     ],
   },
   plugins: [
+<<<<<<< HEAD
     `gatsby-plugin-postcss`,
+=======
+    'gatsby-plugin-postcss',
+>>>>>>> project-a/master
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -62,12 +66,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+<<<<<<< HEAD
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
+=======
+>>>>>>> project-a/master
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -85,8 +92,13 @@ module.exports = {
         `,
         feeds: [
           {
+<<<<<<< HEAD
             serialize: ({ query: { site, allMarkdownRemark } }: any) => {
               return allMarkdownRemark.nodes.map((node: any) => {
+=======
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+>>>>>>> project-a/master
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
@@ -135,9 +147,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+<<<<<<< HEAD
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+=======
+>>>>>>> project-a/master
   ],
 }

@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
     "default": "halfcyan-com"
+=======
+    "default": "halfcyan-com-beta"
+>>>>>>> project-a/master
   }
 }
